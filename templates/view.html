@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}View Messages{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<form method="post">
+    <label for="num">How many random messages would you like to view?</label>
+    <input type="int" name="num" id="num">
+    <br>
+    <input type="submit" value="Submit form">
+</form>
+
+  {% if valid %}
+  Random messages:
+  <br>
+  {% for i in msg %}
+  {{i[2]}} - {{i[1]}}
+  <br>
+  {% endfor %}
+  {% endif %}
+
+  {% if error %}
+  <br>
+  Oh no, something went wrong!  Please try again.
+  {% endif %}
+{% endblock %}

@@ -1,0 +1,62 @@
+html {
+    font-family: sans-serif;
+    background: rgb(186, 120, 33);
+    padding: 1rem;
+}
+
+body {
+    background: rgb(20, 44, 133);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+a {
+    font-family: 'Times New Roman', Times, serif;
+    color: CornflowerBlue;
+    text-decoration: none;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid lightgray;
+}
+
+nav {
+    font-family: sans-serif;
+    background: rgb(174, 100, 5);
+    padding: 0 0.5rem;
+    border-radius: 25px;
+}
+
+nav ul  {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.5rem;
+}
+
+.content {
+    padding: 0 1rem 1rem;
+    background: rgb(179, 22, 22);
+    border-radius: 25px;
+}
+
+.flash {
+    text-align: center;
+    margin: 1em 0;
+    padding: 1em;
+    background: #3f789a;
+    border: 1px solid #377ba8;
+}
