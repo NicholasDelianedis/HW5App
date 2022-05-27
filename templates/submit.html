@@ -7,11 +7,20 @@
 {% block content %}
   <form method="post">
       <label for="message">Submit a message:</label>
-      <input name="message" id="message">
+      <input type="string" name="message" id="message">
       <br>
       <label for="name">Your name or handle:</label>
-      <input name="name" id="name">
+      <input type="string" name="name" id="name">
       <br>
       <input type="submit" value="Submit form">
   </form>
+
+  {% if thanks %}
+  Thanks for your submission!
+  {% endif %}
+
+  {% if error %}
+  <br>
+  Oh no, something went wrong!  Please try again.
+  {% endif %}
 {% endblock %}
