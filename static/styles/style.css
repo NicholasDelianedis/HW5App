@@ -1,25 +1,23 @@
 html {
-    font-family: sans-serif;
-    background: rgb(186, 120, 33);
+    font-family: 'Times New Roman', Times, serif;
+    background: rgb(14, 107, 173);
     padding: 1rem;
 }
 
 body {
-    background: rgb(20, 44, 133);
     max-width: 900px;
     margin: 0 auto;
 }
 
 h1 {
-    color: rgb(0, 0, 0);
-    font-family: sans-serif;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
     margin: 1rem 0;
     text-align: center;
 }
 
 a {
-    font-family: 'Times New Roman', Times, serif;
-    color: CornflowerBlue;
+    color: cornflowerblue;
     text-decoration: none;
 }
 
@@ -29,8 +27,7 @@ hr {
 }
 
 nav {
-    font-family: sans-serif;
-    background: rgb(174, 100, 5);
+    background: gold;
     padding: 0 0.5rem;
     border-radius: 25px;
 }
@@ -49,7 +46,7 @@ nav ul li a {
 
 .content {
     padding: 0 1rem 1rem;
-    background: rgb(179, 22, 22);
+    background: rgb(148, 179, 195);
     border-radius: 25px;
 }
 
@@ -57,6 +54,6 @@ nav ul li a {
     text-align: center;
     margin: 1em 0;
     padding: 1em;
-    background: #3f789a;
+    background: #cae6f6;
     border: 1px solid #377ba8;
 }
