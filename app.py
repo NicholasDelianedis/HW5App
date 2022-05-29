@@ -38,7 +38,6 @@ def get_message_db():
         '''
         cursor = g.message_db.cursor()
         cursor.execute(cmd)
-#        g.idcount = 0
         return g.message_db
 
 def insert_message(request):
@@ -63,11 +62,11 @@ def view():
     if request.method == 'GET':
         return render_template('view.html')
     else:
-#        try:
+        try:
             msg = random_message(request.form['num'])
             return render_template('view.html', valid=True, msg=msg)
- #       except:
-  #          return render_template('view.html', error=True)
+        except:
+            return render_template('view.html', error=True)
 
 def random_message(n):
     conn = get_message_db()
